@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">菜鸟应用商店</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="click_login">点击登录</string>
+    <string name="Complete">打开</string>
+    <string name="Error">重试</string>
+    <string name="Download">下载</string>
+    <string name="appTop">应用排行</string>
+    <string name="appClasses">应用分类</string>
+</resources>

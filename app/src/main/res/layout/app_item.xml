@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/app_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:placeholderImage="@drawable/default_wallpaper"
+        app:placeholderImageScaleType="fitCenter"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/app_info_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/app_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/app_icon"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:text="全名之战"/>
+
+        <TextView
+            android:id="@+id/app_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/app_title_gary"
+            android:layout_marginTop="5dp"
+            android:text="12万次下载 61.5M"/>
+
+        <TextView
+            android:id="@+id/app_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/app_title_gary"
+            android:layout_marginTop="5dp"
+            android:text="与美好的生活不期而遇"/>
+
+
+    </LinearLayout>
+
+
+    <com.dd.CircularProgressButton
+        android:id="@+id/btnWithText"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/app_icon"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        app:cpb_textComplete="@string/Complete"
+        app:cpb_textError="@string/Error"
+        app:cpb_textIdle="@string/Download"
+        app:cpb_selectorIdle="@drawable/idle_state_selector"/>
+
+
+</RelativeLayout>
